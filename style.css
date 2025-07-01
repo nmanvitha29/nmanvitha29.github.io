@@ -1,0 +1,301 @@
+body {
+  background-color: #d0f0ff;
+  margin: 0;
+}
+
+.sidebar {
+  
+  margin:0px;
+  background-color: #0a3b5c;
+  width: 200px;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0px;
+
+}
+
+.sidebar ul {
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  
+}
+
+.sidebar li {
+  text-align: center;
+  margin-bottom: 25px; 
+  text-align: center;
+  
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #d0f0ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sidebar a:hover {
+    padding:10px 50px 10px 50px;
+    background-color: #d0f0ff;
+    color: #0a3b5c;
+}
+
+.image-section {
+  height: 100vh;
+  background-color: #d0f0ff;
+  position: relative;
+  
+}
+
+.image-container  {
+  width: 250px;
+  height: 650px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1200px;
+  border-bottom-right-radius: 50% 30%; 
+  border-bottom-left-radius: 50% 30%; 
+  
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:  top;
+}
+.intro-text {
+  position: absolute;
+  top: 230px;
+  left: 250px;
+  color: #0a3b5c;
+  font-family:cursive;
+}
+
+.intro-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.intro-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.intro-text h1 span {
+  color: #0a3b5c; 
+}
+
+.home-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+}
+
+.home-link a {
+  color: #0a3b5c;
+  font-size: 20px;
+  text-decoration: none;
+}
+.skills{
+  font-size: medium;
+  position: absolute;
+  top: 5px;
+  left: 250px;
+  color:#0a3b5c;
+  font-size: 23px;
+
+}
+
+
+#mainhead{
+  font-size: 50px;
+  text-decoration: underline ;
+}
+.sidehead
+{
+font-size: 30px;
+}
+.matter{
+  font-size: medium;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  color:#0a3b5c;
+  font-size: 30px;
+}
+.about{
+  font-size: medium;
+  position: absolute;
+  top: 120px;
+  left: 250px;
+  color:#0a3b5c;
+  font-size: 30px;
+  
+
+}
+#abt{
+  
+  font-size: 30px;
+  line-height: 50px;
+}
+.links a{
+  text-decoration: none;
+  color: #0a3b5c;
+  line-height: 50px;
+
+}
+.contact{
+  font-size: medium;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  color:#0a3b5c;
+  font-size: 23px;
+
+}
+
+
+
+/* For tablets: screens smaller than 992px */
+@media screen and (max-width: 991px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .intro-text {
+    left: 180px;
+    top: 180px;
+  }
+
+  .skills, .matter, .about, .contact {
+    left: 180px;
+  }
+
+  .image-container {
+    margin-left: 800px;
+    width: 200px;
+    height: 500px;
+  }
+}
+
+/* For mobiles: screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style-type:none;
+    
+  }
+  .sidebar a{
+    font-size: 12px;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar li {
+    margin-bottom: 0;
+    flex: 1;
+    
+  }
+
+
+   .skills, .matter, .about, .contact {
+    position: static;
+    text-align: left;
+    padding: 10px;
+  }
+.intro-text{
+  
+  position:absolute;
+  top:350px;
+  left:105px;
+  
+}
+
+  .intro-text h1 {
+    font-size: 20px;
+    left:180px;
+  }
+
+  .intro-text h2 {
+    font-size: 20px;
+  }
+
+  .skills, .matter, .about, .contact {
+    font-size: 18px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+
+  .home-link a{
+    position: absolute;
+    top:20px;
+    right:0px;
+    font-size: 15px;
+    
+   
+  }
+
+
+#mainhead{
+  font-size: 30px;
+  text-decoration: underline ;
+}
+.sidehead
+{
+font-size: 20px;
+}
+#abt{
+  
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.image-section {
+  height: 100vh;
+  background-color: #d0f0ff;
+  position: absolute;
+}
+
+.image-container  {
+  width: 200px;
+    height: 200px;
+    top: 120px;
+    left: 93px; 
+    margin-left: 0px;
+    border-radius: 50%;
+  }
+  
+  
+
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:  top;
+}
+
+}
+
